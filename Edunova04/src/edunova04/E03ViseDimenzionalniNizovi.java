@@ -9,7 +9,7 @@ public class E03ViseDimenzionalniNizovi {
 		
 		matrica[9][9]=7;
 		
-		System.out.println(matrica);
+		
 		
 		int[][] tablica = {
 				{1,0,0},
@@ -17,8 +17,10 @@ public class E03ViseDimenzionalniNizovi {
 				{0,0,1}
 		};
 		
-		System.out.println(tablica);
 		
+		
+		
+		int [][][] kocka=new int[10][10][10];
 		
 		
 		
