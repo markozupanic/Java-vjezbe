@@ -17,11 +17,11 @@ public class Zadatak2 {
 		 int tableSize = i;
 		 ispisiTablicu(tableSize);
 	        
-	        if (i<10 || i>20) {
-	        	System.out.println("krivi unos broja");
+	        //if (i<10 || i>20) {
+	        	//System.out.println("krivi unos broja");
 	        	
 	        	
-	        }
+	        
 
 	}
 
@@ -29,7 +29,10 @@ public class Zadatak2 {
 	
 
 	private static void ispisiTablicu(int tableSize) {
-		
+		if (tableSize<10 || tableSize>20) {
+			System.out.println("krivi unos broja");
+			System. exit(tableSize);
+		}
 		System.out.format("   ");
 		for(int i=1;i<=tableSize;i++) {
 			System.out.format("%4d", i);
