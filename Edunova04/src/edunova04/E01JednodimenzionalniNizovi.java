@@ -1,6 +1,7 @@
 package edunova04;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class E01JednodimenzionalniNizovi {
 
@@ -52,6 +53,7 @@ public class E01JednodimenzionalniNizovi {
 		
 		
 		
+	
 		
 		
 		
