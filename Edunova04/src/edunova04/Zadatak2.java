@@ -30,18 +30,18 @@ public class Zadatak2 {
 
 	private static void ispisiTablicu(int tableSize) {
 		if (tableSize<10 || tableSize>20) {
-			System.out.println("krivi unos broja");
+			System.out.println("Krivi unos broja");
 			System. exit(tableSize);
 		}
 		System.out.format("   ");
 		for(int i=1;i<=tableSize;i++) {
-			System.out.format("%4d", i);
+			System.out.format("%4d",i);   //"%4d",
 		}
 		System.out.println();
-		System.out.println("-------------------------------------------------------------------------------");
+		System.out.println("---------------------------------------------------------------------------------------");
 		
 		for(int i=1;i<=tableSize;i++) {
-			System.out.format("%4d |", i);
+			System.out.format("%4d |", i);         //"%4d |",
 			for (int j=1;j<=tableSize;j++) {
 				System.out.format("%4d", i*j);
 			}
