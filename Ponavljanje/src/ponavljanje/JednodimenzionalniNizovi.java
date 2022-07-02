@@ -39,6 +39,8 @@ public class JednodimenzionalniNizovi {
 		System.out.print(vrijednosti[vrijednosti.length-1]);
 		System.out.println();
 		
+		double[] brojevi=new double[5];
+		
 		
 		
 		
