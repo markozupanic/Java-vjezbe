@@ -2,6 +2,8 @@ package ponavljanje;
 
 import java.util.Arrays;
 
+import javax.swing.JOptionPane;
+
 public class EForPetlja {
 
 	public static void main(String[] args) {
@@ -84,14 +86,69 @@ public class EForPetlja {
 	}
 	
 	if(prim) {
-		System.out.println(b+ "je prim," +brojac);
+		System.out.println(b + " je prim," + brojac);
 		
 	}else {
-		System.out.println(b+ "nije prim," +brojac);
+		System.out.println(b + " nije prim," + brojac);
 	}
 	
 	
-	
+	vanjska:
+		for(int i=0;i<10;i++) {
+			for(int j=0;j<10;j++) {
+				if(j==1){
+					break vanjska;
+				}
+			}
+		}
+		
+		
+		System.out.println((100+1)*50);
+		int suma=0;
+		for(int i=1;i<=100;i++) {
+			suma+=i;
+		}
+		System.out.println(suma);
+		
+		
+		//int i, s=0; for(i=1;i<=100;i++) s+=i;
+
+		// int i, s; for(i=1, s=0;i<=100; s+=i, i++);
+//
+		// int i=1, s=0; for( ; i<=100; i++){ s+=i; }
+//
+//		 int i, s=0; for(i=1; ; i++){ if(i<=100) s+=i; else break;}
+//
+//		 int i, s=0; for(i=1;i<=100;){ s+=i; i++;}
+//
+//		 int i, s=0; for(i=1; ; ){ if(i<=100) {s+=i; i++;} else break;}
+//
+//		 int i=1, s=0; for( ; i<=100 ; ){ s+=i; i++;}
+//
+//		  int i=1, s=0; for( ; ; i++){if(i<=100)  s+=i; else break;}
+//
+//		 int i=1, s=0; for( ;  ; ){if(i<=100) {s+=i; i++;} else break;} 
+//		
+//	
+		
+		
+		// beskonaèna petlja
+		//for(int i=0;i>0;i++) { // OVO NIJE BESKONAÈNA PETLJA
+			
+		//}
+		
+		suma=0;
+		int i=0;
+		for(;;) {
+			i=Integer.parseInt(JOptionPane
+					.showInputDialog("Daj broj"));
+			if(i==-1) {
+				break;
+			}
+			suma+=i;
+		}
+		System.out.println(suma);
+		
 	
 	
 	
