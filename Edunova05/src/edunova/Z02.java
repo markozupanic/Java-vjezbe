@@ -20,7 +20,7 @@ public class Z02 {
 			suma+=i;
 		}
 
-		System.out.println(suma);
+		System.out.println(suma+1);
 	}
 
 }
