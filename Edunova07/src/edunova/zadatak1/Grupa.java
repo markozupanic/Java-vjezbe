@@ -15,30 +15,7 @@ public class Grupa {
 	public Date  datumPocetka;
 	public String smjer;
 	public String predavac;
-	public String getNaziv() {
-		return naziv;
-	}
-	public void setNaziv(String naziv) {
-		this.naziv = naziv;
-	}
-	public Date getDatumPocetka() {
-		return datumPocetka;
-	}
-	public void setDatumPocetka(Date datumPocetka) {
-		this.datumPocetka = datumPocetka;
-	}
-	public String getSmjer() {
-		return smjer;
-	}
-	public void setSmjer(String smjer) {
-		this.smjer = smjer;
-	}
-	public String getPredavac() {
-		return predavac;
-	}
-	public void setPredavac(String predavac) {
-		this.predavac = predavac;
-	}
+	
 	
 	
 	
