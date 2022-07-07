@@ -3,7 +3,7 @@ package edunova.klase;
 public class Polaznik extends Osoba{
 
 	
-	private String brojUgovora;
+	private String iban;
 
 	
 	
@@ -16,7 +16,7 @@ public class Polaznik extends Osoba{
 
 	public Polaznik(String ime, String prezime, String brojUgovora) {
 		super(ime, prezime);
-		this.brojUgovora = brojUgovora;
+		this.iban = brojUgovora;
 	}
 
 
@@ -24,13 +24,30 @@ public class Polaznik extends Osoba{
 
 
 	public String getBrojUgovora() {
-		return brojUgovora;
+		return iban;
 	}
 
 	public void setBrojUgovora(String brojUgovora) {
-		this.brojUgovora = brojUgovora;
+		this.iban = brojUgovora;
 	}
-	
+
+
+
+	@Override
+	public String toString() {
+		return super.toString()  + " " + iban;
+	}
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 }
