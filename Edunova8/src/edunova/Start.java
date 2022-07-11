@@ -1,8 +1,11 @@
 package edunova;
 
+import javax.swing.JOptionPane;
+
 import edunova.klase.Polaznik;
 import edunova.klase.Pravokutnik;
 import edunova.klase.Predavac;
+import edunova.zadatak2.Uredjaj;
 
 public class Start {
 	
@@ -41,6 +44,9 @@ public class Start {
 		
 		
 		
+		Uredjaj uredjaj=new Uredjaj();
+		uredjaj=new Uredjaj("HP");
+		System.out.println(uredjaj);
 		
 		
 		
