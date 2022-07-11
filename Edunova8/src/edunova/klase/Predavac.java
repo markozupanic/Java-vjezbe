@@ -22,7 +22,9 @@ public class Predavac extends Osoba{
 		this.iban = iban;
 	}
 	
-	
+	public String toString() {
+		return super.toString() + " " +iban;
+	}
 	
 
 }
