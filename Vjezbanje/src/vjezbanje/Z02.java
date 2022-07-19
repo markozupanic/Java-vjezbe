@@ -11,18 +11,11 @@ public class Z02 {
 		
 		int i=Integer.parseInt(JOptionPane.showInputDialog("x"));
 		
-		int rez=i/10;
+		i%=10;
 		
-		System.out.println(rez);
+		System.out.println(i);
 		
 
-		int broj=Integer.parseInt(
-				JOptionPane.showInputDialog("Unesi dvoznamenskasti broj")
-				);
-		
-		broj%=10;
-		
-		System.out.println(broj);
 		
 	}
 	
