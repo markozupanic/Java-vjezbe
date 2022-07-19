@@ -13,8 +13,6 @@ public class Z03 {
 
 		float rez= (float )i / y;
 		
-		
-		
 		System.out.println(rez);
 		
 		
