@@ -67,7 +67,7 @@ public class Start {
 
 
 	private void polaznici() {
-		System.out.println("Doðe izbornik za predavaèe");
+		System.out.println("Doðe izbornik za polaznike");
 		//za sada
 		izbornik();
 		
@@ -75,7 +75,7 @@ public class Start {
 
 
 	private void grupe() {
-		System.out.println("Doðe izbornik za predavaèe");
+		System.out.println("Doðe izbornik za grupe");
 		//za sada
 		izbornik();
 		
