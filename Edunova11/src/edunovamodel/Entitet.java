@@ -11,6 +11,18 @@ public abstract class Entitet {
 	public void setSifra(Integer sifra) {
 		this.sifra = sifra;
 	}
+
+	public Entitet() {
+		super();
+	}
+
+	public Entitet(Integer sifra) {
+		super();
+		this.sifra = sifra;
+	}
+	
+	
+	
 	
 	
 
