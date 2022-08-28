@@ -6,6 +6,11 @@ import javax.swing.JOptionPane;
 
 public class CiklicnaTablica {
 	
+	    
+	
+		
+	
+	
 	   int red=Integer.parseInt(JOptionPane.showInputDialog("Unesi broj"));
 	    int stupac=Integer.parseInt(JOptionPane.showInputDialog("Unesi broj"));;
        int[][] tablica = new int[red][stupac];
@@ -79,5 +84,5 @@ public class CiklicnaTablica {
 		
 	
 
-	}
+	
 
