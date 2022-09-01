@@ -5,6 +5,17 @@ public class ProizvodRezervacije extends Entitet{
 	private Integer proizvod;
 	private Rezervacija rezervacija;
 	
+	
+	
+	
+	public ProizvodRezervacije(Integer sifra, Integer proizvod, Rezervacija rezervacija) {
+		super(sifra);
+		this.proizvod = proizvod;
+		this.rezervacija = rezervacija;
+	}
+	public ProizvodRezervacije() {
+		super();
+	}
 	public Integer getProizvod() {
 		return proizvod;
 	}

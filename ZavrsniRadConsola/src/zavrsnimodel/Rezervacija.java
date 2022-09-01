@@ -10,6 +10,19 @@ public class Rezervacija extends Entitet{
 	private Zaposlenik zaposlenik;
 	
 	
+	
+	
+	
+	public Rezervacija(Integer sifra, Integer brojLjudi, Date terminDolaska, String kontakt, Zaposlenik zaposlenik) {
+		super(sifra);
+		this.brojLjudi = brojLjudi;
+		this.terminDolaska = terminDolaska;
+		this.kontakt = kontakt;
+		this.zaposlenik = zaposlenik;
+	}
+	public Rezervacija() {
+		super();
+	}
 	public Integer getBrojLjudi() {
 		return brojLjudi;
 	}

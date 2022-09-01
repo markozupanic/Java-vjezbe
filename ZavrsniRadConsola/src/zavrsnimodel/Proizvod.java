@@ -8,6 +8,19 @@ public class Proizvod extends Entitet {
 	private Integer cijena;
 	
 	
+	
+	
+	
+	public Proizvod(Integer sifra, String vrsta, String naziv, Integer kolicina, Integer cijena) {
+		super(sifra);
+		this.vrsta = vrsta;
+		this.naziv = naziv;
+		this.kolicina = kolicina;
+		this.cijena = cijena;
+	}
+	public Proizvod() {
+		super();
+	}
 	public String getVrsta() {
 		return vrsta;
 	}

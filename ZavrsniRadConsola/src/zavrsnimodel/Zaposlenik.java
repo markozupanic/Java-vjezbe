@@ -10,6 +10,19 @@ public class Zaposlenik extends Entitet {
 	private Date smjena;
 	private String znanje;
 	
+	
+	
+	public Zaposlenik(Integer sifra, String ime, String prezime, String kontakt, Date smjena, String znanje) {
+		super(sifra);
+		this.ime = ime;
+		this.prezime = prezime;
+		this.kontakt = kontakt;
+		this.smjena = smjena;
+		this.znanje = znanje;
+	}
+	public Zaposlenik() {
+		super();
+	}
 	public String getIme() {
 		return ime;
 	}
