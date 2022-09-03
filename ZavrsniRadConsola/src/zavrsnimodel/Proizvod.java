@@ -45,6 +45,10 @@ public class Proizvod extends Entitet {
 	public void setCijena(Integer cijena) {
 		this.cijena = cijena;
 	}
+	public void setSifra(int ucitajInt) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

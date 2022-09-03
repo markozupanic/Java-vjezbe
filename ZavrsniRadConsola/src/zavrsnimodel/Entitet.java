@@ -21,9 +21,7 @@ public abstract class Entitet {
 		return sifra;
 	}
 
-	public void setSifra(Integer sifra) {
-		this.sifra = sifra;
-	}
+	
 	
 	
 }
