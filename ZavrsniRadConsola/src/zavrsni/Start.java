@@ -9,6 +9,7 @@ import zavrsnimodel.Rezervacija;
 import zavrsnimodel.Zaposlenik;
 import zavrsniutil.Pomocno;
 import zavrsniutil.ProizvodCRUD;
+import zavrsniutil.ZaposlenikCRUD;
 
 public class Start {
 	
@@ -53,7 +54,8 @@ public class Start {
 	private void zaposlenik() {
 		System.out.println("Doðe izbornik za zaposlenike");
 		
-		izbornik();
+		izbornikProgram();
+		pokreniZaposlenikAkciju();
 		
 	}
 
@@ -92,7 +94,7 @@ public class Start {
 		System.out.println("2. Pregled");
 		System.out.println("3. Promjena");
 		System.out.println("4. Brisanje");
-		System.out.println("5. povratak na glavni izbornik");
+		System.out.println("5. Povratak na glavni izbornik");
 	}
 	
 	private void proizvodi() {
@@ -137,6 +139,49 @@ public class Start {
 		
 		}
 		
+	}
+	
+	
+	private void zaposlenici() {
+		System.out.println("Program zaposlenici");
+		izbornikProgram();
+		pokreniZaposlenikAkciju();
+		
+		
+	}
+	
+	
+	private void pokreniZaposlenikAkciju() {
+		switch (Pomocno.ucitajInt("Odaberi akciju ",1,5)) {
+		case 1: 
+			zaposlenici.add(ZaposlenikCRUD.unosNovogZaposlenika());
+			
+			zaposlenici();
+			break;
+			
+		case 2:
+			ZaposlenikCRUD.ispis(zaposlenici);
+			zaposlenici();
+			
+			break;
+			
+			
+		case 3:
+			ZaposlenikCRUD.ispis(zaposlenici);
+			ZaposlenikCRUD.promjena(zaposlenici.get(Pomocno.ucitajInt("Odaberi zaposlenika", 
+					1,zaposlenici.size())-1));
+			zaposlenici();
+			break;
+			
+		case 4:
+			ZaposlenikCRUD.ispis(zaposlenici);
+			zaposlenici.remove(Pomocno.ucitajInt("Odaberi zaposlenika", 1,
+					zaposlenici.size())-1);
+			
+		case 5:
+			izbornik();
+	
+		}
 	}
 	
 	
