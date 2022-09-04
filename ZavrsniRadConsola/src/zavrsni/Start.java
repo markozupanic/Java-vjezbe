@@ -1,12 +1,27 @@
 package zavrsni;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
+import zavrsnimodel.Proizvod;
+import zavrsnimodel.Rezervacija;
+import zavrsnimodel.Zaposlenik;
 import zavrsniutil.Pomocno;
+import zavrsniutil.ProizvodCRUD;
 
 public class Start {
 	
+	private List<Proizvod> proizvodi;
+	private List<Rezervacija> rezervacije;
+	private List<Zaposlenik> zaposlenici;
+	
+	
 	public Start() {
+		
+		proizvodi =new ArrayList<>();
+		rezervacije=new ArrayList<>();
+		zaposlenici=new ArrayList<>();
 		Pomocno.ulaz=new Scanner(System.in);
 		System.out.println("***** Zavrsni rad konzolna aplikacija V1 *****");
 		izbornik();
@@ -68,6 +83,39 @@ public class Start {
 		System.out.println("4. Izlaz");
 		System.out.println("");
 		pokreniProgram(); 
+		
+	}
+	
+	private void izbornikProgram() {
+		System.out.println("1. Unos");
+		System.out.println("2. Pregled");
+		System.out.println("3. Promjena");
+		System.out.println("4. Brisanje");
+		System.out.println("5. povratak na glavni izbornik");
+	}
+	
+	private void proizvodi() {
+		System.out.println("Program proizvodi");
+		izbornikProgram();
+		pokreniProizvodAkciju();
+		
+	}
+	
+	private void pokreniProizvodAkciju() {
+		
+		switch (Pomocno.ucitajInt("Odaberi akciju", 1,5)) {
+		case 1: 
+			
+			proizvodi();
+			break;
+			
+		case 2:
+			
+			ProizvodCRUD.ispis(proizvodi);
+			
+			
+		
+		}
 		
 	}
 	

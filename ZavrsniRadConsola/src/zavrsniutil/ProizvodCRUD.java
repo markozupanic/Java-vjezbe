@@ -22,7 +22,7 @@ public class ProizvodCRUD {
 	
 	
 	
-	public static void ispis(List<Proizvod> proizvodi) {
+	public static void ispis(List <Proizvod> proizvodi) {
 		
 		int rb=1;
 		System.out.println("");
