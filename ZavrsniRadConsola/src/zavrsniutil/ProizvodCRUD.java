@@ -10,7 +10,7 @@ public class ProizvodCRUD {
 	public static Proizvod unosNovog() {
 		
 		Proizvod p= new Proizvod();
-	    p.setSifra(Pomocno.ucitajInt("Unesite sifru smjera"));
+	    p.setSifra(Pomocno.ucitajInt("Unesite sifru proizvoda"));
 	    p.setNaziv(Pomocno.ucitajString("Unesi naziv proizvoda"));
 	    p.setCijena(Pomocno.ucitajInt("Unesite cijenu prozvoda"));
 	    p.setKolicina(Pomocno.ucitajInt("Unesite kolicinu proizvoda"));
@@ -29,7 +29,7 @@ public class ProizvodCRUD {
 		System.out.println("Proizvodi u aplikaciji");
 		for(Proizvod p: proizvodi) {
 			
-			System.out.println(rb++ + ". " + p.getNaziv());
+			System.out.println(rb++ + ". " + p.getNaziv() + " " + "/" + " " + p.getCijena() +  " " + "kn");
 			
 		}
 		

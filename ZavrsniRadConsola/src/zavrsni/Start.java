@@ -68,8 +68,9 @@ public class Start {
 
 	private void proizvod() {
 		System.out.println("Doðe izbornik za proizvode");
+		izbornikProgram();
+		pokreniProizvodAkciju();
 		
-		izbornik();
 		
 	}
 	
@@ -77,9 +78,9 @@ public class Start {
 		
 		System.out.println("");
 		System.out.println("Glavni izbornik");
-		System.out.println("1. Zaposlenik");
+		System.out.println("1. Proizvod");
 		System.out.println("2. Rezervacija");
-		System.out.println("3. Proizvod");
+		System.out.println("3. Zaposlenik");
 		System.out.println("4. Izlaz");
 		System.out.println("");
 		pokreniProgram(); 
@@ -105,13 +106,32 @@ public class Start {
 		
 		switch (Pomocno.ucitajInt("Odaberi akciju", 1,5)) {
 		case 1: 
-			
+			proizvodi.add(ProizvodCRUD.unosNovog());
 			proizvodi();
 			break;
 			
 		case 2:
-			
 			ProizvodCRUD.ispis(proizvodi);
+			proizvodi();
+			break;
+			
+		case 3:
+			ProizvodCRUD.ispis(proizvodi);
+			ProizvodCRUD.promjena(proizvodi.get(Pomocno.ucitajInt("Odaberi smjer",1,
+					proizvodi.size())-1));
+			
+			proizvodi();
+			break;
+			
+		case 4:
+			ProizvodCRUD.ispis(proizvodi);
+			proizvodi.remove(Pomocno.ucitajInt("Odaberi smjer",1,proizvodi.size())-1);
+			proizvodi();
+			break;
+			
+		case 5:
+			izbornik();
+		
 			
 			
 		
