@@ -1,5 +1,6 @@
 package zavrsniutil;
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class Pomocno {
@@ -13,7 +14,7 @@ public static Scanner ulaz;
 	 * @param poruka Koja se prikazuje korisniku
 	 * @return Uèitani cjeli broj
 	 */
-	public static int ucitajInt(String poruka) {
+	public static Integer ucitajInt(String poruka) {
 		while(true) {
 			System.out.print(poruka + ": ");
 			try {
