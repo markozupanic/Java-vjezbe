@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Pomocno {
 	
-	public static Scanner ulaz;
-
+public static Scanner ulaz;
+	
 	/**
 	 * Metoda osigurava unos cjelog broja
 	 * koji može biti u cijelom rasponu
@@ -61,6 +61,21 @@ public class Pomocno {
 			System.out.print(poruka + ": ");
 			s = ulaz.nextLine();
 			if(s.trim().isEmpty()) {
+				System.out.println( 
+						"Obavezan unos");
+				continue;
+			}
+			return s;
+		}
+	}
+	
+	public static String ucitajString(String poruka,
+			boolean prazno) {
+		String s;
+		while(true) {
+			System.out.print(poruka + ": ");
+			s = ulaz.nextLine();
+			if(!prazno && s.trim().isEmpty()) {
 				System.out.println( 
 						"Obavezan unos");
 				continue;
