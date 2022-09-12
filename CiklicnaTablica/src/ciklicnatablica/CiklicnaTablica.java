@@ -7,6 +7,8 @@ import javax.swing.JOptionPane;
 public class CiklicnaTablica {
 	
 	    
+	public static void main(String[] args) {
+		
 	
 		
 	
